@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+    ServerAdmin	<%= @adminemail %>
+    ServerName <%= @servername %>
+    ServerAlias www.<%= @servername %>
+    DocumentRoot /var/www/html/<%= @servername -%>/public_html/
+    ErrorLog /var/www/html/<%- @servername -%>/logs/error.log
+    CustomLog /var/www/html/<%= @servername -%>/logs/access.log combined
+    <Directory /var/www/html/<%= @servername -%>/public_html>
+        Require all granted
+	</Directory>
+	<Directory /var/www/html/<%= @servername -%>/public_html>
+        AuthType Basic
+      AuthName "Restricted Content"
+      AuthUserFile /etc/apache2/.htpasswd
+      Require valid-user
+        </Directory>
+
+</Virtual Host>
