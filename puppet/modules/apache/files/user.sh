@@ -1,4 +1,4 @@
-servername='izo-storybook.maarkdev.com'
+servername='serverdns'
 useradd jenkins-user
 chown -R jenkins-user.jenkins-user /var/www/$servername
 chmod 770 /var/www/$servername
@@ -15,5 +15,5 @@ mkdir .ssh
 mkdir authorized_keys
 chmod 600 authorized_keys
 cat jenkins-key.pub > authorized_keys
-scp /var/www/$servername/.ssh/jenkins-user.pub ubuntu@ec2-34-234-133-66.compute-1.amazonaws.com:~/.ssh/authorized_keys
+scp /var/www/$servername/.ssh/jenkins-user.pub ubuntu@ip.compute-1.amazonaws.com:~/.ssh/authorized_keys
 

@@ -15,9 +15,9 @@ class apache::vhosts {
       ensure  => file,
       content  => template('apache/vhosts-deb.conf.erb'),
     }
-    file { [ '/var/www/qa-zenkey.maarkdev.com',
-             '/var/www/qa-zenkey.maarkdev.com/public_html',
-             '/var/www/qa-zenkey.maarkdev.com/logs', ]:
+    file { [ '/var/www/dir',
+             '/var/www/dir/public_html',
+             '/var/www/dir/logs', ]:
       ensure    => directory,
     }
   } else {

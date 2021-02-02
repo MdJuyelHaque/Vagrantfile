@@ -1,6 +1,6 @@
 node 'default' {
-  $adminemail = 'devops@maark.com'
-  $servername = ' izo-storybook.maarkdev.com'
+  $adminemail = 'adminemail'
+  $servername = 'serverdns'
  
   include apache
   include apache::vhosts

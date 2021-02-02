@@ -1,6 +1,6 @@
 
-$serveremail = 'mjuyel@maark.com'
-$servername = 'puppet.example.com'
+$serveremail = 'emil'
+$servername = 'serverdns'
 include apache
 include apache::vhosts
 
