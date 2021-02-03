@@ -1,3 +1,2 @@
 # Vagrantfile
-
-This is the vagrant configuration with puppet.
+#This is the vagrant configuration with puppet.
