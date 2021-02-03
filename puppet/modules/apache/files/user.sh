@@ -1,3 +1,4 @@
+
 servername='serverdns'
 useradd jenkins-user
 chown -R jenkins-user.jenkins-user /var/www/$servername

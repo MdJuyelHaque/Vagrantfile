@@ -1,5 +1,4 @@
 class apache::vhosts {
-
   if $::osfamily == 'RedHat' {
     file { '/etc/httpd/conf.d/vhost.conf':
       ensure    => file,

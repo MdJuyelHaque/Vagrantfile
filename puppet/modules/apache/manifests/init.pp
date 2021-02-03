@@ -1,4 +1,3 @@
-
 class apache (
   $apachename   = $::apache::params::apachename,
 ) 
